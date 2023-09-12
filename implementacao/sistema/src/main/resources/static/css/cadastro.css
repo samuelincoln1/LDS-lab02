@@ -1,0 +1,63 @@
+body {
+    background-color: white;
+}
+
+.navbarcor {
+    background-color: whitesmoke;
+}
+
+.controle {
+    font-size: x-large;
+
+}
+
+.navbar-brand {
+    font-size: xx-large !important;
+}
+
+.espacamentoitens {
+    /* background-color: blue; */
+    padding: 0 40px 0 0;
+}
+
+.sublinhado {
+    transition: all 0.2s;
+    position: relative;
+}
+
+.sublinhado::after {
+    transition: all 0.2s;
+    opacity: 0;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: goldenrod;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sublinhado:hover::after {
+    opacity: 1;
+
+
+}
+
+.active {
+    color: black;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.cor {
+    background-color: rgb(235, 235, 235);
+}
