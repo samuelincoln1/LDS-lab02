@@ -43,14 +43,17 @@ public class LoginController {
                 CookieService.setCookie(response, "emailUsuario", cliente.getEmail(), tempoLogado);
                 CookieService.setCookie(response, "nomeUsuario", cliente.getNome(), tempoLogado);
 
+            return "servicos/menuCliente";
+
                 
             } else if (agente != null) {
                 CookieService.setCookie(response, "id", String.valueOf(agente.getId()), tempoLogado);
                 CookieService.setCookie(response, "emailUsuario", agente.getEmail(), tempoLogado);
                 CookieService.setCookie(response, "nomeUsuario", agente.getNome(), tempoLogado);
+                
+            return "servicos/menuAgente";
             }
     
-            return "redirect:/servicos";
         }
 
         model.addAttribute("erro", "Usuário ou senha inválidos");
