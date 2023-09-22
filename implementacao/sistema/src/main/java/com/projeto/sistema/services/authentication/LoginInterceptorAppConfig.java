@@ -18,8 +18,10 @@ public class LoginInterceptorAppConfig implements WebMvcConfigurer  {
                 "/js/**",
                 "/css/**",
                 "/img/**",
-                "/cadastro",
-                "/cadastrar",
+                "/cadastroAgente",
+                "/cadastroCliente",
+                "/cadastrarCliente",
+                "/cadastrarAgente",
                 "/admin",
                 "/adminLogar",
                 "/"

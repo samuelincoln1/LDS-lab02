@@ -4,7 +4,7 @@ Como um usuário individual (cliente), quero me cadastrar no sistema, para que e
 
 Critérios de Aceitação:
 
-- O sistema deve permitir que o cliente preencha seus dados de identificação (RG, CPF, Nome, Endereço).
+- O sistema deve permitir que o cliente preencha seus dados de identificação (RG, cpf, Nome, Endereço).
 - O cliente deve ser capaz de fornecer informações sobre sua profissão.
 - O sistema deve permitir que o cliente informe até três entidades empregadoras e seus respectivos rendimentos auferidos.
 
@@ -15,7 +15,7 @@ Como um cliente cadastrado, quero ser capaz de introduzir um pedido de aluguel d
 ## Critérios de Aceitação:
 
 - O cliente deve ser capaz de selecionar o tipo de contrato desejado (propriedade do cliente, empresa ou banco).
-- O cliente deve informar a matrícula, ano, marca, modelo e placa do veículo desejado.
+- O cliente deve informar a matrícula, profissao, marca, modelo e placa do veículo desejado.
 - O sistema deve registrar o pedido de aluguel no sistema para análise financeira.
 
 # História de Usuário 3: Análise de Pedido por Agente

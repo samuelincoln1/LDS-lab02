@@ -1,35 +1,37 @@
-package com.projeto.sistema.controller;
+    package com.projeto.sistema.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.projeto.sistema.model.Cliente;
-import com.projeto.sistema.repositories.ClienteRep;
+
+import com.projeto.sistema.model.Agente;
+import com.projeto.sistema.repositories.AgenteRep;
+
 
 @Controller
-public class CadastroController {
+public class CadastroAgenteController {
 
     @Autowired
-    private ClienteRep rep;
+    private AgenteRep rep;
 
-    @GetMapping("/cadastroCliente")
+    @GetMapping("/cadastroAgente")
     public String index() {
-        return "cadastro/cadastroCliente";
+        return "cadastro/cadastroAgente";
     }
 
-    @PostMapping("/cadastrarCliente")
-    public String cadastrar(Cliente cliente, Model model) {
+    @PostMapping("/cadastrarAgente")
+    public String cadastrar(Agente agente, Model model) {
         try {
-            rep.save(cliente);
+            rep.save(agente);
             return "redirect:/login";
         } catch (Exception e) {
             System.out.println("Erro!");
             model.addAttribute("erro", "Erro ao realizar cadastro");
             e.printStackTrace();
         }
-        return "cadastro/cadastroCliente";
+        return "cadastro/cadastroAgente";
     }
 
 }
