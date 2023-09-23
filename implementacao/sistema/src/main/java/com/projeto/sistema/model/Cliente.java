@@ -22,9 +22,7 @@ public class Cliente extends Usuario{
         this.cpf = cpf;
         this.profissao = profissao;
         this.rendimentos = rendimentos;
-    }
-
-    
+    }  
 
     public String getcpf() {
         return this.cpf;

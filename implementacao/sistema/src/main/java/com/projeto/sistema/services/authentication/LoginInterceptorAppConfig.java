@@ -24,6 +24,7 @@ public class LoginInterceptorAppConfig implements WebMvcConfigurer  {
                 "/cadastrarAgente",
                 "/admin",
                 "/adminLogar",
+                "/listar-pedidos",
                 "/"
             );
     }
